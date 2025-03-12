@@ -9,6 +9,8 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
+# config.py
+bot_token = "7808942668:AAGYsPmFmCCnVsO6SiKQn-8okOpXkYs-k1U"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Paste youtube video or instagram reel link to download it")
